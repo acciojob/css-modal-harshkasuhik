@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -5,8 +6,7 @@ body {
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
     font-size: 16px;
 }
 .modal {
@@ -18,6 +18,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.5);
+}
+.modal:target {
+    display: block;
 }
 .modal-content {
     background-color: #fff;
@@ -42,11 +45,9 @@ body {
     padding: 20px;
 }
 .close-modal {
-    background: none;
-    border: none;
+    text-decoration: none;
     color: white;
     font-size: 20px;
-    cursor: pointer;
 }
 @keyframes fadeIn {
     from {opacity: 0;}
